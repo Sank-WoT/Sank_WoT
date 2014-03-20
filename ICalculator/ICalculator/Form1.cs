@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ICalculator;
 
 namespace WindowsFormsApplication1
 {
@@ -25,31 +26,31 @@ namespace WindowsFormsApplication1
         {
             double firstArgument = Convert.ToDouble(firstField.Text);
             double secondArgument = Convert.ToDouble(secondField.Text);
-            double result = firstArgument - secondArgument;
-            resultField.Text = result.ToString();
+            Substractor substractor = new Substractor(); 
+            resultField.Text = substractor.Calculate(firstArgument, secondArgument);
         }
     private void addition_Click(object sender, EventArgs e)
         {
             double firstArgument = Convert.ToDouble(firstField.Text);
             double secondArgument = Convert.ToDouble(secondField.Text);
-            double result = firstArgument + secondArgument;
-            resultField.Text = result.ToString();
+             Additor additor = new Additor();
+            resultField.Text = additor.Calculate(firstArgument, secondArgument);
         }
 
     private void multiplication_Click(object sender, EventArgs e)
     {
         double firstArgument = Convert.ToDouble(firstField.Text);
         double secondArgument = Convert.ToDouble(secondField.Text);
-        double result = firstArgument * secondArgument;
-        resultField.Text = result.ToString();
+        Multiplication  multiplication = new Multiplication();
+        resultField.Text = multiplication.Calculate(firstArgument, secondArgument);
     }
 
     private void division_Click(object sender, EventArgs e)
     {
         double firstArgument = Convert.ToDouble(firstField.Text);
         double secondArgument = Convert.ToDouble(secondField.Text);
-        double result = firstArgument / secondArgument;
-        resultField.Text = result.ToString();
+        Division division = new Division();
+        resultField.Text = division.Calculate(firstArgument, secondArgument);
     }
 
     }
