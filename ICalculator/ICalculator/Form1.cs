@@ -52,6 +52,13 @@ namespace WindowsFormsApplication1
         Division division = new Division();
         resultField.Text = division.Calculate(firstArgument, secondArgument);
     }
+    private void involution_Click_1(object sender, EventArgs e)
+    {
+        double firstArgument = Convert.ToDouble(firstField.Text);
+        double secondArgument = Convert.ToDouble(secondField.Text);
+        Involution involution = new Involution();
+        resultField.Text = involution.Calculate(firstArgument, secondArgument);
+    }
 
     }
 }

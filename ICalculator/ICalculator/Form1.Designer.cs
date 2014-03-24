@@ -35,6 +35,7 @@
             this.firstField = new System.Windows.Forms.TextBox();
             this.secondField = new System.Windows.Forms.TextBox();
             this.resultField = new System.Windows.Forms.Label();
+            this.involution = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // subtraction
@@ -101,11 +102,22 @@
             this.resultField.TabIndex = 7;
             this.resultField.Text = "result";
             // 
+            // involution
+            // 
+            this.involution.Location = new System.Drawing.Point(125, 184);
+            this.involution.Name = "involution";
+            this.involution.Size = new System.Drawing.Size(34, 30);
+            this.involution.TabIndex = 8;
+            this.involution.Text = "^";
+            this.involution.UseVisualStyleBackColor = true;
+            this.involution.Click += new System.EventHandler(this.involution_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(212, 290);
+            this.Controls.Add(this.involution);
             this.Controls.Add(this.resultField);
             this.Controls.Add(this.secondField);
             this.Controls.Add(this.firstField);
@@ -130,6 +142,7 @@
         private System.Windows.Forms.TextBox firstField;
         private System.Windows.Forms.TextBox secondField;
         private System.Windows.Forms.Label resultField;
+        private System.Windows.Forms.Button involution;
 
     }
 }
