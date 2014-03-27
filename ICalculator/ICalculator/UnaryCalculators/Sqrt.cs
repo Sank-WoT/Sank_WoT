@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ICalculator
 {
-    class Involuton
+    class Sqrt
     {
+          double result = first / second;
+          return result.ToString();
     }
 }

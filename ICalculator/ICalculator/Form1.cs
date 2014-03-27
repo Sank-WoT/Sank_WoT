@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ICalculator;
+using ICalculator.BinaryCalculators;
 
 namespace WindowsFormsApplication1
 {
@@ -19,9 +20,6 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-     
-
-    
         private void substraction_Click(object sender, EventArgs e)
         {
             double firstArgument = Convert.ToDouble(firstField.Text);
@@ -41,7 +39,7 @@ namespace WindowsFormsApplication1
     {
         double firstArgument = Convert.ToDouble(firstField.Text);
         double secondArgument = Convert.ToDouble(secondField.Text);
-        Multiplication  multiplication = new Multiplication();
+        Multiplier  multiplication = new Multiplier();
         resultField.Text = multiplication.Calculate(firstArgument, secondArgument);
     }
 
@@ -49,7 +47,7 @@ namespace WindowsFormsApplication1
     {
         double firstArgument = Convert.ToDouble(firstField.Text);
         double secondArgument = Convert.ToDouble(secondField.Text);
-        Division division = new Division();
+        Divider division = new Divider();
         resultField.Text = division.Calculate(firstArgument, secondArgument);
     }
     private void involution_Click_1(object sender, EventArgs e)
@@ -59,6 +57,22 @@ namespace WindowsFormsApplication1
         Involution involution = new Involution();
         resultField.Text = involution.Calculate(firstArgument, secondArgument);
     }
+
+    private void sqrt_Click(object sender, EventArgs e)
+    {
+        double firstArgument = Convert.ToDouble(firstField.Text);
+        double secondArgument = Convert.ToDouble(secondField.Text);
+        Sqrt sqrt = new Sqrt();
+        resultField.Text = sqrt.Calculate(firstArgument, secondArgument);
+    }
+
+       /* private void Calculate(string name)
+        {
+            double firstArgument = Convert.ToDouble(firstField.Text);
+            double secondArgument = Convert.ToDouble(secondField.Text);
+            BinaryCalculator substractor = new Substractor();
+            resultField.Text = substractor.Calculate(firstArgument, secondArgument);
+        }*/
 
     }
 }

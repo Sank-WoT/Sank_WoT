@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ICalculator
+namespace ICalculator.BinaryCalculators
 {
-   public class Involution
+    public class Involution : IBinaryCalculator
     {
         public string Calculate(double first, double second)
         {
