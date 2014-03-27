@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ICalculator.UnaryCalculators
 {
-    class IUnaryCalculator
+    public interface IUnaryCalculator
     {
+        string Calculate(double first);
     }
 }

@@ -58,6 +58,11 @@ namespace WindowsFormsApplication1
             resultField.Text = calculator.Calculate(firstArgument, secondArgument);
         }
 
+          private void sqrt_Click(object sender, EventArgs e)
+          {
+
+          }
+
     }
 }
 
