@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ICalculator.UnaryCalculators
 {
-    class Sqrt
+    class IUnaryCalculator
     {
-
     }
 }

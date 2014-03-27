@@ -22,57 +22,43 @@ namespace WindowsFormsApplication1
 
         private void substraction_Click(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(firstField.Text);
-            double secondArgument = Convert.ToDouble(secondField.Text);
-            Substractor substractor = new Substractor(); 
-            resultField.Text = substractor.Calculate(firstArgument, secondArgument);
+            Calculate("-");
         }
     private void addition_Click(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(firstField.Text);
-            double secondArgument = Convert.ToDouble(secondField.Text);
-             Additor additor = new Additor();
-            resultField.Text = additor.Calculate(firstArgument, secondArgument);
+            Calculate("+");
         }
 
     private void multiplication_Click(object sender, EventArgs e)
     {
-        double firstArgument = Convert.ToDouble(firstField.Text);
-        double secondArgument = Convert.ToDouble(secondField.Text);
-        Multiplier  multiplication = new Multiplier();
-        resultField.Text = multiplication.Calculate(firstArgument, secondArgument);
+        Calculate("*");
     }
 
     private void division_Click(object sender, EventArgs e)
     {
-        double firstArgument = Convert.ToDouble(firstField.Text);
-        double secondArgument = Convert.ToDouble(secondField.Text);
-        Divider division = new Divider();
-        resultField.Text = division.Calculate(firstArgument, secondArgument);
+        Calculate("/");
     }
     private void involution_Click_1(object sender, EventArgs e)
     {
-        double firstArgument = Convert.ToDouble(firstField.Text);
-        double secondArgument = Convert.ToDouble(secondField.Text);
-        Involution involution = new Involution();
-        resultField.Text = involution.Calculate(firstArgument, secondArgument);
+       Calculate("^");
     }
 
-    private void sqrt_Click(object sender, EventArgs e)
+    /*private void sqrt_Click(object sender, EventArgs e)
     {
         double firstArgument = Convert.ToDouble(firstField.Text);
         double secondArgument = Convert.ToDouble(secondField.Text);
         Sqrt sqrt = new Sqrt();
         resultField.Text = sqrt.Calculate(firstArgument, secondArgument);
-    }
-
-       /* private void Calculate(string name)
+    }*/
+          private void Calculate(string name)
         {
             double firstArgument = Convert.ToDouble(firstField.Text);
             double secondArgument = Convert.ToDouble(secondField.Text);
-            BinaryCalculator substractor = new Substractor();
-            resultField.Text = substractor.Calculate(firstArgument, secondArgument);
-        }*/
+            IBinaryCalculator calculator = BinaryCalculatorsFactory.CreateBinaryCalculator(name);
+            resultField.Text = calculator.Calculate(firstArgument, secondArgument);
+        }
 
     }
 }
+
+

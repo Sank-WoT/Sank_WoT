@@ -36,7 +36,6 @@
             this.secondField = new System.Windows.Forms.TextBox();
             this.resultField = new System.Windows.Forms.Label();
             this.involution = new System.Windows.Forms.Button();
-            this.sqrt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // subtraction
@@ -113,22 +112,11 @@
             this.involution.UseVisualStyleBackColor = true;
             this.involution.Click += new System.EventHandler(this.involution_Click_1);
             // 
-            // sqrt
-            // 
-            this.sqrt.Location = new System.Drawing.Point(125, 229);
-            this.sqrt.Name = "sqrt";
-            this.sqrt.Size = new System.Drawing.Size(33, 29);
-            this.sqrt.TabIndex = 9;
-            this.sqrt.Text = "sqrt";
-            this.sqrt.UseVisualStyleBackColor = true;
-            this.sqrt.Click += new System.EventHandler(this.sqrt_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(212, 290);
-            this.Controls.Add(this.sqrt);
             this.Controls.Add(this.involution);
             this.Controls.Add(this.resultField);
             this.Controls.Add(this.secondField);
@@ -155,7 +143,6 @@
         private System.Windows.Forms.TextBox secondField;
         private System.Windows.Forms.Label resultField;
         private System.Windows.Forms.Button involution;
-        private System.Windows.Forms.Button sqrt;
 
     }
 }
