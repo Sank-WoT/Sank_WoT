@@ -10,7 +10,8 @@ namespace ICalculator.UnaryCalculators
     {
         public string Calculate(double first)
         {
-            throw new NotImplementedException();
+            double result = Math.Pow(first, 0.5);
+            return result.ToString();
         }
     }
 }

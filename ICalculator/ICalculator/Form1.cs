@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ICalculator;
 using ICalculator.BinaryCalculators;
+using ICalculator.UnaryCalculators;
 
 namespace WindowsFormsApplication1
 {
@@ -42,14 +43,6 @@ namespace WindowsFormsApplication1
     {
        Calculate("^");
     }
-
-    /*private void sqrt_Click(object sender, EventArgs e)
-    {
-        double firstArgument = Convert.ToDouble(firstField.Text);
-        double secondArgument = Convert.ToDouble(secondField.Text);
-        Sqrt sqrt = new Sqrt();
-        resultField.Text = sqrt.Calculate(firstArgument, secondArgument);
-    }*/
           private void Calculate(string name)
         {
             double firstArgument = Convert.ToDouble(firstField.Text);
@@ -60,9 +53,14 @@ namespace WindowsFormsApplication1
 
           private void sqrt_Click(object sender, EventArgs e)
           {
-
+              Calculate1("sqrt");
           }
-
+          private void Calculate1(string name)
+          {
+              double firstArgument = Convert.ToDouble(firstField.Text);
+              IUnaryCalculator calculator = UnaryCalculatorsFactory.CreateBinaryCalculator(name);
+              resultField.Text = calculator.Calculate(firstArgument);
+          }
     }
 }
 
