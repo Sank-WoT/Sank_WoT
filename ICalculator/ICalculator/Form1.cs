@@ -61,12 +61,18 @@ namespace WindowsFormsApplication1
           {
               Calculate1("e^x");
           } 
+          private void arcsin_Click(object sender, EventArgs e)
+          {
+              Calculate1("arcsin(x)");
+          }
         private void Calculate1(string name)
           {
               double firstArgument = Convert.ToDouble(firstField.Text);
               IUnaryCalculator calculator = UnaryCalculatorsFactory.CreateBinaryCalculator(name);
               resultField.Text = calculator.Calculate(firstArgument);
           }
+
+       
     }
 }
 

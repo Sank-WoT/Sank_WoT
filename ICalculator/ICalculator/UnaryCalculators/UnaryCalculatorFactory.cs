@@ -16,6 +16,8 @@ namespace ICalculator.UnaryCalculators
                     return new Sqrt();
                 case "e^x":
                     return new Napierian_number();
+                case "arcsin(x)":
+                    return new Arcsin();
                 default:
                     throw new ArgumentException("unknown calculator", "name");
             }

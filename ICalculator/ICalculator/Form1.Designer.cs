@@ -38,6 +38,7 @@
             this.involution = new System.Windows.Forms.Button();
             this.sqrt = new System.Windows.Forms.Button();
             this.Napierian = new System.Windows.Forms.Button();
+            this.arcsin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // subtraction
@@ -134,11 +135,22 @@
             this.Napierian.UseVisualStyleBackColor = true;
             this.Napierian.Click += new System.EventHandler(this.Napierian_Click);
             // 
+            // arcsin
+            // 
+            this.arcsin.Location = new System.Drawing.Point(241, 184);
+            this.arcsin.Name = "arcsin";
+            this.arcsin.Size = new System.Drawing.Size(70, 30);
+            this.arcsin.TabIndex = 11;
+            this.arcsin.Text = "acsin(x)";
+            this.arcsin.UseVisualStyleBackColor = true;
+            this.arcsin.Click += new System.EventHandler(this.arcsin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 292);
+            this.Controls.Add(this.arcsin);
             this.Controls.Add(this.Napierian);
             this.Controls.Add(this.sqrt);
             this.Controls.Add(this.involution);
@@ -169,6 +181,7 @@
         private System.Windows.Forms.Button involution;
         private System.Windows.Forms.Button sqrt;
         private System.Windows.Forms.Button Napierian;
+        private System.Windows.Forms.Button arcsin;
 
     }
 }
