@@ -41,6 +41,7 @@
             this.arcsin = new System.Windows.Forms.Button();
             this.arccos = new System.Windows.Forms.Button();
             this.logx = new System.Windows.Forms.Button();
+            this.arctg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // subtraction
@@ -55,7 +56,7 @@
             // 
             // multiplication
             // 
-            this.multiplication.Location = new System.Drawing.Point(21, 229);
+            this.multiplication.Location = new System.Drawing.Point(21, 220);
             this.multiplication.Name = "multiplication";
             this.multiplication.Size = new System.Drawing.Size(34, 30);
             this.multiplication.TabIndex = 2;
@@ -75,7 +76,7 @@
             // 
             // division
             // 
-            this.division.Location = new System.Drawing.Point(72, 229);
+            this.division.Location = new System.Drawing.Point(72, 220);
             this.division.Name = "division";
             this.division.Size = new System.Drawing.Size(34, 30);
             this.division.TabIndex = 4;
@@ -119,7 +120,7 @@
             // 
             // sqrt
             // 
-            this.sqrt.Location = new System.Drawing.Point(125, 229);
+            this.sqrt.Location = new System.Drawing.Point(125, 220);
             this.sqrt.Name = "sqrt";
             this.sqrt.Size = new System.Drawing.Size(34, 30);
             this.sqrt.TabIndex = 9;
@@ -129,7 +130,7 @@
             // 
             // Napierian
             // 
-            this.Napierian.Location = new System.Drawing.Point(185, 184);
+            this.Napierian.Location = new System.Drawing.Point(183, 184);
             this.Napierian.Name = "Napierian";
             this.Napierian.Size = new System.Drawing.Size(34, 30);
             this.Napierian.TabIndex = 10;
@@ -149,7 +150,7 @@
             // 
             // arccos
             // 
-            this.arccos.Location = new System.Drawing.Point(241, 229);
+            this.arccos.Location = new System.Drawing.Point(241, 220);
             this.arccos.Name = "arccos";
             this.arccos.Size = new System.Drawing.Size(70, 30);
             this.arccos.TabIndex = 12;
@@ -159,19 +160,30 @@
             // 
             // logx
             // 
-            this.logx.Location = new System.Drawing.Point(241, 274);
+            this.logx.Location = new System.Drawing.Point(241, 256);
             this.logx.Name = "logx";
             this.logx.Size = new System.Drawing.Size(70, 30);
             this.logx.TabIndex = 13;
-            this.logx.Text = "log(x)";
+            this.logx.Text = "log2(x)";
             this.logx.UseVisualStyleBackColor = true;
             this.logx.Click += new System.EventHandler(this.logx_Click);
+            // 
+            // arctg
+            // 
+            this.arctg.Location = new System.Drawing.Point(241, 292);
+            this.arctg.Name = "arctg";
+            this.arctg.Size = new System.Drawing.Size(70, 30);
+            this.arctg.TabIndex = 14;
+            this.arctg.Text = "arctg(x)";
+            this.arctg.UseVisualStyleBackColor = true;
+            this.arctg.Click += new System.EventHandler(this.arctg_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 363);
+            this.ClientSize = new System.Drawing.Size(333, 340);
+            this.Controls.Add(this.arctg);
             this.Controls.Add(this.logx);
             this.Controls.Add(this.arccos);
             this.Controls.Add(this.arcsin);
@@ -208,6 +220,7 @@
         private System.Windows.Forms.Button arcsin;
         private System.Windows.Forms.Button arccos;
         private System.Windows.Forms.Button logx;
+        private System.Windows.Forms.Button arctg;
 
     }
 }

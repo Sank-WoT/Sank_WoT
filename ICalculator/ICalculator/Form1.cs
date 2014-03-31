@@ -69,8 +69,12 @@ namespace WindowsFormsApplication1
           }
           private void logx_Click(object sender, EventArgs e)
           {
-              Calculate1("log(x)");
+              Calculate1("log2(x)");
           }
+          void arctg_Click(object sender, EventArgs e)
+          {
+              Calculate1("arctg(x)");
+          }  
         private void Calculate1(string name)
           {
               double firstArgument = Convert.ToDouble(firstField.Text);
@@ -78,9 +82,7 @@ namespace WindowsFormsApplication1
               resultField.Text = calculator.Calculate(firstArgument);
           }
 
-        
-
-      
+         
     }
 }
 

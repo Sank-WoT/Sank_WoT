@@ -79,6 +79,7 @@
     <Compile Include="BinaryCalculators\Substractor.cs" />
     <Compile Include="UnaryCalculators\Arccos.cs" />
     <Compile Include="UnaryCalculators\Arcsin.cs" />
+    <Compile Include="UnaryCalculators\Arctg.cs" />
     <Compile Include="UnaryCalculators\IUnaryCalculator.cs" />
     <Compile Include="UnaryCalculators\Log.cs" />
     <Compile Include="UnaryCalculators\Napierian number.cs" />

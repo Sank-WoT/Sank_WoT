@@ -20,8 +20,10 @@ namespace ICalculator.UnaryCalculators
                     return new Arcsin();
                 case "arccos(x)":
                     return new Arccos();
-                case "log(x)":
+                case "log2(x)":
                     return new Log();
+                case "arctg(x)":
+                    return new Arctg();
                 default:
                     throw new ArgumentException("unknown calculator", "name");
             }
