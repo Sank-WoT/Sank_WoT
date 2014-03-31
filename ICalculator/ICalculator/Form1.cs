@@ -55,7 +55,13 @@ namespace WindowsFormsApplication1
           {
               Calculate1("sqrt");
           }
-          private void Calculate1(string name)
+         
+
+          private void Napierian_Click(object sender, EventArgs e)
+          {
+              Calculate1("e^x");
+          } 
+        private void Calculate1(string name)
           {
               double firstArgument = Convert.ToDouble(firstField.Text);
               IUnaryCalculator calculator = UnaryCalculatorsFactory.CreateBinaryCalculator(name);

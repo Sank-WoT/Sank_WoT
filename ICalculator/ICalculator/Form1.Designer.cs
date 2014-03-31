@@ -37,6 +37,7 @@
             this.resultField = new System.Windows.Forms.Label();
             this.involution = new System.Windows.Forms.Button();
             this.sqrt = new System.Windows.Forms.Button();
+            this.Napierian = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // subtraction
@@ -83,14 +84,14 @@
             // 
             this.firstField.Location = new System.Drawing.Point(21, 37);
             this.firstField.Name = "firstField";
-            this.firstField.Size = new System.Drawing.Size(127, 20);
+            this.firstField.Size = new System.Drawing.Size(212, 20);
             this.firstField.TabIndex = 5;
             // 
             // secondField
             // 
             this.secondField.Location = new System.Drawing.Point(21, 82);
             this.secondField.Name = "secondField";
-            this.secondField.Size = new System.Drawing.Size(127, 20);
+            this.secondField.Size = new System.Drawing.Size(212, 20);
             this.secondField.TabIndex = 6;
             // 
             // resultField
@@ -123,11 +124,22 @@
             this.sqrt.UseVisualStyleBackColor = true;
             this.sqrt.Click += new System.EventHandler(this.sqrt_Click);
             // 
+            // Napierian
+            // 
+            this.Napierian.Location = new System.Drawing.Point(185, 184);
+            this.Napierian.Name = "Napierian";
+            this.Napierian.Size = new System.Drawing.Size(34, 30);
+            this.Napierian.TabIndex = 10;
+            this.Napierian.Text = "e^x";
+            this.Napierian.UseVisualStyleBackColor = true;
+            this.Napierian.Click += new System.EventHandler(this.Napierian_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(212, 290);
+            this.ClientSize = new System.Drawing.Size(323, 292);
+            this.Controls.Add(this.Napierian);
             this.Controls.Add(this.sqrt);
             this.Controls.Add(this.involution);
             this.Controls.Add(this.resultField);
@@ -156,6 +168,7 @@
         private System.Windows.Forms.Label resultField;
         private System.Windows.Forms.Button involution;
         private System.Windows.Forms.Button sqrt;
+        private System.Windows.Forms.Button Napierian;
 
     }
 }

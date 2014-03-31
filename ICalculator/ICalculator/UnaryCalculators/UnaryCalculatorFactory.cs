@@ -14,6 +14,8 @@ namespace ICalculator.UnaryCalculators
             {
                 case "sqrt":
                     return new Sqrt();
+                case "e^x":
+                    return new Napierian_number();
                 default:
                     throw new ArgumentException("unknown calculator", "name");
             }
