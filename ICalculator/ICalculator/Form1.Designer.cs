@@ -39,6 +39,8 @@
             this.sqrt = new System.Windows.Forms.Button();
             this.Napierian = new System.Windows.Forms.Button();
             this.arcsin = new System.Windows.Forms.Button();
+            this.arccos = new System.Windows.Forms.Button();
+            this.logx = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // subtraction
@@ -141,15 +143,37 @@
             this.arcsin.Name = "arcsin";
             this.arcsin.Size = new System.Drawing.Size(70, 30);
             this.arcsin.TabIndex = 11;
-            this.arcsin.Text = "acsin(x)";
+            this.arcsin.Text = "arcsin(x)";
             this.arcsin.UseVisualStyleBackColor = true;
             this.arcsin.Click += new System.EventHandler(this.arcsin_Click);
+            // 
+            // arccos
+            // 
+            this.arccos.Location = new System.Drawing.Point(241, 229);
+            this.arccos.Name = "arccos";
+            this.arccos.Size = new System.Drawing.Size(70, 30);
+            this.arccos.TabIndex = 12;
+            this.arccos.Text = "arccos(x)";
+            this.arccos.UseVisualStyleBackColor = true;
+            this.arccos.Click += new System.EventHandler(this.arccos_Click);
+            // 
+            // logx
+            // 
+            this.logx.Location = new System.Drawing.Point(241, 274);
+            this.logx.Name = "logx";
+            this.logx.Size = new System.Drawing.Size(70, 30);
+            this.logx.TabIndex = 13;
+            this.logx.Text = "log(x)";
+            this.logx.UseVisualStyleBackColor = true;
+            this.logx.Click += new System.EventHandler(this.logx_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(323, 292);
+            this.ClientSize = new System.Drawing.Size(333, 363);
+            this.Controls.Add(this.logx);
+            this.Controls.Add(this.arccos);
             this.Controls.Add(this.arcsin);
             this.Controls.Add(this.Napierian);
             this.Controls.Add(this.sqrt);
@@ -182,6 +206,8 @@
         private System.Windows.Forms.Button sqrt;
         private System.Windows.Forms.Button Napierian;
         private System.Windows.Forms.Button arcsin;
+        private System.Windows.Forms.Button arccos;
+        private System.Windows.Forms.Button logx;
 
     }
 }

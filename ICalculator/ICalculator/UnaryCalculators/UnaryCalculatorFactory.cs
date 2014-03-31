@@ -18,6 +18,10 @@ namespace ICalculator.UnaryCalculators
                     return new Napierian_number();
                 case "arcsin(x)":
                     return new Arcsin();
+                case "arccos(x)":
+                    return new Arccos();
+                case "log(x)":
+                    return new Log();
                 default:
                     throw new ArgumentException("unknown calculator", "name");
             }

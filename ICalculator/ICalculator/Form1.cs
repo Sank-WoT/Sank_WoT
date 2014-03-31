@@ -55,8 +55,6 @@ namespace WindowsFormsApplication1
           {
               Calculate1("sqrt");
           }
-         
-
           private void Napierian_Click(object sender, EventArgs e)
           {
               Calculate1("e^x");
@@ -64,6 +62,14 @@ namespace WindowsFormsApplication1
           private void arcsin_Click(object sender, EventArgs e)
           {
               Calculate1("arcsin(x)");
+          } 
+          private void arccos_Click(object sender, EventArgs e)
+          {
+              Calculate1("arccos(x)");
+          }
+          private void logx_Click(object sender, EventArgs e)
+          {
+              Calculate1("log(x)");
           }
         private void Calculate1(string name)
           {
@@ -72,7 +78,9 @@ namespace WindowsFormsApplication1
               resultField.Text = calculator.Calculate(firstArgument);
           }
 
-       
+        
+
+      
     }
 }
 
