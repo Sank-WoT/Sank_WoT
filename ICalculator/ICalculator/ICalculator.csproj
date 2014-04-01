@@ -81,6 +81,7 @@
     <Compile Include="UnaryCalculators\Arcsin.cs" />
     <Compile Include="UnaryCalculators\Arctg.cs" />
     <Compile Include="UnaryCalculators\Cos.cs" />
+    <Compile Include="UnaryCalculators\Cot.cs" />
     <Compile Include="UnaryCalculators\IUnaryCalculator.cs" />
     <Compile Include="UnaryCalculators\Log.cs" />
     <Compile Include="UnaryCalculators\Napierian number.cs" />

@@ -30,6 +30,8 @@ namespace ICalculator.UnaryCalculators
                     return new Cos();
                 case "tan(x)":
                     return new Tan();
+                case "cot(x)":
+                    return new Cot();
                 default:
                     throw new ArgumentException("unknown calculator", "name");
             }
