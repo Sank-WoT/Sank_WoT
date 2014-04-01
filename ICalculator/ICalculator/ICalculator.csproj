@@ -80,9 +80,11 @@
     <Compile Include="UnaryCalculators\Arccos.cs" />
     <Compile Include="UnaryCalculators\Arcsin.cs" />
     <Compile Include="UnaryCalculators\Arctg.cs" />
+    <Compile Include="UnaryCalculators\Cos.cs" />
     <Compile Include="UnaryCalculators\IUnaryCalculator.cs" />
     <Compile Include="UnaryCalculators\Log.cs" />
     <Compile Include="UnaryCalculators\Napierian number.cs" />
+    <Compile Include="UnaryCalculators\Sin.cs" />
     <Compile Include="UnaryCalculators\Sqrt.cs" />
     <Compile Include="UnaryCalculators\UnaryCalculatorFactory.cs" />
     <EmbeddedResource Include="Form1.resx">

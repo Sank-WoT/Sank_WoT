@@ -24,6 +24,10 @@ namespace ICalculator.UnaryCalculators
                     return new Log();
                 case "arctg(x)":
                     return new Arctg();
+                case "sin(x)":
+                    return new Sin();
+                case "cos(x)":
+                    return new Cos();
                 default:
                     throw new ArgumentException("unknown calculator", "name");
             }

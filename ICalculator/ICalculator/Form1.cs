@@ -75,12 +75,24 @@ namespace WindowsFormsApplication1
           {
               Calculate1("arctg(x)");
           }  
+          private void sin_Click(object sender, EventArgs e)
+          {
+              Calculate1("sin(x)");
+          }
+          private void cos_Click(object sender, EventArgs e)
+          {
+              Calculate1("cos(x)"); 
+          }
         private void Calculate1(string name)
           {
               double firstArgument = Convert.ToDouble(firstField.Text);
               IUnaryCalculator calculator = UnaryCalculatorsFactory.CreateBinaryCalculator(name);
               resultField.Text = calculator.Calculate(firstArgument);
           }
+
+       
+
+       
 
          
     }

@@ -42,6 +42,8 @@
             this.arccos = new System.Windows.Forms.Button();
             this.logx = new System.Windows.Forms.Button();
             this.arctg = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // subtraction
@@ -130,7 +132,7 @@
             // 
             // Napierian
             // 
-            this.Napierian.Location = new System.Drawing.Point(183, 184);
+            this.Napierian.Location = new System.Drawing.Point(125, 256);
             this.Napierian.Name = "Napierian";
             this.Napierian.Size = new System.Drawing.Size(34, 30);
             this.Napierian.TabIndex = 10;
@@ -140,7 +142,7 @@
             // 
             // arcsin
             // 
-            this.arcsin.Location = new System.Drawing.Point(241, 184);
+            this.arcsin.Location = new System.Drawing.Point(241, 148);
             this.arcsin.Name = "arcsin";
             this.arcsin.Size = new System.Drawing.Size(70, 30);
             this.arcsin.TabIndex = 11;
@@ -150,7 +152,7 @@
             // 
             // arccos
             // 
-            this.arccos.Location = new System.Drawing.Point(241, 220);
+            this.arccos.Location = new System.Drawing.Point(241, 184);
             this.arccos.Name = "arccos";
             this.arccos.Size = new System.Drawing.Size(70, 30);
             this.arccos.TabIndex = 12;
@@ -160,7 +162,7 @@
             // 
             // logx
             // 
-            this.logx.Location = new System.Drawing.Point(241, 256);
+            this.logx.Location = new System.Drawing.Point(49, 256);
             this.logx.Name = "logx";
             this.logx.Size = new System.Drawing.Size(70, 30);
             this.logx.TabIndex = 13;
@@ -170,7 +172,7 @@
             // 
             // arctg
             // 
-            this.arctg.Location = new System.Drawing.Point(241, 292);
+            this.arctg.Location = new System.Drawing.Point(241, 225);
             this.arctg.Name = "arctg";
             this.arctg.Size = new System.Drawing.Size(70, 30);
             this.arctg.TabIndex = 14;
@@ -178,11 +180,33 @@
             this.arctg.UseVisualStyleBackColor = true;
             this.arctg.Click += new System.EventHandler(this.arctg_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(163, 148);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 30);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "sin(x)";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.sin_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(163, 184);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(70, 30);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "cos(x)";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.cos_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(333, 340);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.arctg);
             this.Controls.Add(this.logx);
             this.Controls.Add(this.arccos);
@@ -221,6 +245,8 @@
         private System.Windows.Forms.Button arccos;
         private System.Windows.Forms.Button logx;
         private System.Windows.Forms.Button arctg;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
 
     }
 }
