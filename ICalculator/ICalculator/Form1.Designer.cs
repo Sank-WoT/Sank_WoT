@@ -44,6 +44,7 @@
             this.arctg = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // subtraction
@@ -172,7 +173,7 @@
             // 
             // arctg
             // 
-            this.arctg.Location = new System.Drawing.Point(241, 225);
+            this.arctg.Location = new System.Drawing.Point(241, 220);
             this.arctg.Name = "arctg";
             this.arctg.Size = new System.Drawing.Size(70, 30);
             this.arctg.TabIndex = 14;
@@ -200,11 +201,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.cos_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(163, 220);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(70, 30);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "tan(x)";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.tan_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(333, 340);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.arctg);
@@ -247,6 +259,7 @@
         private System.Windows.Forms.Button arctg;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
 
     }
 }

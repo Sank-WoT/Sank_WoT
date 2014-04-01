@@ -86,6 +86,7 @@
     <Compile Include="UnaryCalculators\Napierian number.cs" />
     <Compile Include="UnaryCalculators\Sin.cs" />
     <Compile Include="UnaryCalculators\Sqrt.cs" />
+    <Compile Include="UnaryCalculators\Tan.cs" />
     <Compile Include="UnaryCalculators\UnaryCalculatorFactory.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
