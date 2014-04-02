@@ -83,6 +83,7 @@
     <Compile Include="UnaryCalculators\Cos.cs" />
     <Compile Include="UnaryCalculators\Cot.cs" />
     <Compile Include="UnaryCalculators\IUnaryCalculator.cs" />
+    <Compile Include="UnaryCalculators\Ln.cs" />
     <Compile Include="UnaryCalculators\Log.cs" />
     <Compile Include="UnaryCalculators\Napierian number.cs" />
     <Compile Include="UnaryCalculators\Sin.cs" />

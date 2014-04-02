@@ -32,6 +32,8 @@ namespace ICalculator.UnaryCalculators
                     return new Tan();
                 case "cot(x)":
                     return new Cot();
+                case "ln(x)":
+                    return new Ln();
                 default:
                     throw new ArgumentException("unknown calculator", "name");
             }
