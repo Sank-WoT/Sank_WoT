@@ -63,9 +63,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryCalculators\Additor.cs" />
+    <Compile Include="BinaryCalculators\AdditorTest.cs" />
     <Compile Include="BinaryCalculators\BinaryCalculatorsFactory.cs" />
     <Compile Include="BinaryCalculators\Divider.cs" />
+    <Compile Include="BinaryCalculators\DividerTest.cs" />
     <Compile Include="BinaryCalculators\IBinaryCalculator.cs" />
+    <Compile Include="BinaryCalculators\InvolutionTest.cs" />
+    <Compile Include="BinaryCalculators\MultiplierTest.cs" />
+    <Compile Include="BinaryCalculators\SubstractorTest.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
