@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ICalculator.BinaryCalculators;
+﻿using ICalculator.BinaryCalculators;
 using NUnit.Framework;
 
-namespace ICalculator.test
+namespace ICalculator.test.BinaryCalculators
 {
     [TestFixture]
     public class SubstractorTest

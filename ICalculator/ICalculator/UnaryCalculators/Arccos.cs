@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace ICalculator.UnaryCalculators
 {
-    class Arccos: IUnaryCalculator
+    public class Arccos : IUnaryCalculator
     {
         public string Calculate(double first)
         {
             double result = Math.Acos(first);
             return result.ToString();
         }
-    
     }
 }

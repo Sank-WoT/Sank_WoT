@@ -42,7 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryCalculators\AdditorTest.cs" />
+    <Compile Include="BinaryCalculators\DividerTest.cs" />
+    <Compile Include="BinaryCalculators\InvolutionTest.cs" />
+    <Compile Include="BinaryCalculators\MultiplierTest.cs" />
+    <Compile Include="BinaryCalculators\SubstractorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnaryCalculators\ArccosTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
