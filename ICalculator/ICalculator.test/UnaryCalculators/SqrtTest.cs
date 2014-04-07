@@ -4,13 +4,13 @@ using NUnit.Framework;
 namespace ICalculator.UnaryCalculators
 {
     [TestFixture]
-    public class ArccosTest
+    public class SqrtTest
     {
         [Test]
         public void CalculateTest()
         {
-            Arccos arccos = new Arccos();
-            Assert.AreEqual("1,0471975511966", arccos.Calculate(0.5), "arccos(0.5) !=1,0471975511966");
+            Sqrt sqrt = new Sqrt();
+            Assert.AreEqual("1", sqrt.Calculate(1), "sqrt(0.5) !=1");
         }
     }
 }

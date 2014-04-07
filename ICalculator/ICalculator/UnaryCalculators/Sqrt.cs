@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ICalculator.UnaryCalculators
 {
-    class Sqrt: IUnaryCalculator
+   public class Sqrt: IUnaryCalculator
     {
         public string Calculate(double first)
         {
