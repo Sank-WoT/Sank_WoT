@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ICalculator.UnaryCalculators
 {
-    class Napierian_number : IUnaryCalculator
+    public class Napierian_number : IUnaryCalculator
     {
         public string Calculate(double first)
         {

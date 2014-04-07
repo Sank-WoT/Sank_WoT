@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ICalculator.UnaryCalculators
 {
-    class Arctg:IUnaryCalculator
+    public class Arctg : IUnaryCalculator
     {
         public string Calculate(double first)
         {
