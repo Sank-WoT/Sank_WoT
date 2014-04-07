@@ -1,12 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using NUnit.Framework;
 
-namespace ICalculator.test.UnaryCalculators
+namespace ICalculator.UnaryCalculators
 {
-    class LnTest
+    [TestFixture]
+    public class LnTest
     {
+        [Test]
+        public void CalculateTest()
+        {
+            Ln ln = new Ln();
+            Assert.AreEqual("0", ln.Calculate(1), "ln(1) !=0");
+        }
     }
 }

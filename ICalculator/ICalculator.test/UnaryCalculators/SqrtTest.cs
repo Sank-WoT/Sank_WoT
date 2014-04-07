@@ -10,7 +10,7 @@ namespace ICalculator.UnaryCalculators
         public void CalculateTest()
         {
             Sqrt sqrt = new Sqrt();
-            Assert.AreEqual("1", sqrt.Calculate(1), "sqrt(0.5) !=1");
+            Assert.AreEqual("1", sqrt.Calculate(1), "sqrt(1) !=1");
         }
     }
 }
