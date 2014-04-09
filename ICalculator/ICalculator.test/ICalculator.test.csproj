@@ -51,6 +51,7 @@
     <Compile Include="UnaryCalculators\ArccosTest.cs" />
     <Compile Include="UnaryCalculators\ArcsinTest.cs" />
     <Compile Include="UnaryCalculators\ArctgTest.cs" />
+    <Compile Include="UnaryCalculators\CosTest.cs" />
     <Compile Include="UnaryCalculators\LnTest.cs" />
     <Compile Include="UnaryCalculators\SqrtTest.cs" />
   </ItemGroup>
