@@ -3,14 +3,13 @@ using NUnit.Framework;
 
 namespace ICalculator.Tests.UnaryCalculators
 {
-    [TestFixture]
-    public class TanTest
+    public class LogTest
     {
         [Test]
         public void CalculateTest()
         {
-            Tan tan = new Tan();
-            Assert.AreEqual(1.5574, tan.Calculate(1), 0.0001);
+            Log log = new Log();
+            Assert.AreEqual(0.8415, log.Calculate(1), 0.0001);
         }
     }
 }
