@@ -1,7 +1,7 @@
-﻿using System;
+﻿using ICalculator.UnaryCalculators;
 using NUnit.Framework;
 
-namespace ICalculator.UnaryCalculators
+namespace ICalculator.Tests.UnaryCalculators
 {
     [TestFixture]
     public class ArcsinTest
@@ -10,7 +10,7 @@ namespace ICalculator.UnaryCalculators
         public void CalculateTest()
         {
             Arcsin arcsin = new Arcsin();
-            Assert.AreEqual("1,5707963267949", arcsin.Calculate(1), "arcsin(0) !=1,5707963267949");
+            Assert.AreEqual(1.5707963267949, arcsin.Calculate(1), 0.0001);
         }
     }
 }

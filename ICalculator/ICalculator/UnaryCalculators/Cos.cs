@@ -8,10 +8,10 @@ namespace ICalculator.UnaryCalculators
 {
     public class Cos : IUnaryCalculator
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Cos(first);
-            return result.ToString();
+            return result;
         }
     }
 }

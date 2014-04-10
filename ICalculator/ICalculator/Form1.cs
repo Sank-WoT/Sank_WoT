@@ -39,7 +39,7 @@ namespace ICalculator
             double firstArgument = Convert.ToDouble(firstField.Text);
             double secondArgument = Convert.ToDouble(secondField.Text);
             IBinaryCalculator calculator = BinaryCalculatorsFactory.CreateBinaryCalculator(name);
-            resultField.Text = calculator.Calculate(firstArgument, secondArgument);
+              resultField.Text = calculator.Calculate(firstArgument, secondArgument).ToString();
         }
 
           private void sqrt_Click(object sender, EventArgs e)
@@ -90,7 +90,7 @@ namespace ICalculator
           {
               double firstArgument = Convert.ToDouble(firstField.Text);
               IUnaryCalculator calculator = UnaryCalculatorsFactory.CreateBinaryCalculator(name);
-              resultField.Text = calculator.Calculate(firstArgument);
+              resultField.Text = calculator.Calculate(firstArgument).ToString();
           }
 
 

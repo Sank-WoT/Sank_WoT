@@ -1,7 +1,7 @@
-﻿using System;
+﻿using ICalculator.UnaryCalculators;
 using NUnit.Framework;
 
-namespace ICalculator.UnaryCalculators
+namespace ICalculator.Tests.UnaryCalculators
 {
     [TestFixture]
     public class ArccosTest
@@ -10,7 +10,7 @@ namespace ICalculator.UnaryCalculators
         public void CalculateTest()
         {
             Arccos arccos = new Arccos();
-            Assert.AreEqual("1,0471975511966", arccos.Calculate(0.5), "arccos(0.5) !=1,0471975511966");
+            Assert.AreEqual(1.0471975511966, arccos.Calculate(0.5),0.0001);
         }
     }
 }

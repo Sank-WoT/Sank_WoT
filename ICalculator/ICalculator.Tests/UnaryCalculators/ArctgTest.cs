@@ -1,7 +1,7 @@
-﻿using System;
+﻿using ICalculator.UnaryCalculators;
 using NUnit.Framework;
 
-namespace ICalculator.UnaryCalculators
+namespace ICalculator.Tests.UnaryCalculators
 {
      [TestFixture]
     public class ArctgTest
@@ -10,7 +10,7 @@ namespace ICalculator.UnaryCalculators
          public void CalculateTest()
          {
              Arctg arctg = new Arctg();
-             Assert.AreEqual("98,93906527", arctg.Calculate(60), "arctg(60) !=1,0471975511966");
+             Assert.AreEqual(1.5541, arctg.Calculate(60), 0.0001);
          }
     }
 }

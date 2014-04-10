@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICalculator", "ICalculator\ICalculator.csproj", "{FE149301-3818-4068-8ACA-CF12DB8251D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICalculator.test", "ICalculator.test\ICalculator.test.csproj", "{7B9B5868-A285-4DE5-B899-C809823D7040}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICalculator.Tests", "ICalculator.Tests\ICalculator.Tests.csproj", "{7B9B5868-A285-4DE5-B899-C809823D7040}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,8 +22,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(Performance) = preSolution
-		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal

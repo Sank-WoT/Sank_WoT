@@ -8,10 +8,10 @@ namespace ICalculator.UnaryCalculators
 {
   public  class Ln : IUnaryCalculator
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Log(first, Math.E);
-            return result.ToString();
+            return result;
         }
     }
 }

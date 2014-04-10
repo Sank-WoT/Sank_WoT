@@ -7,8 +7,8 @@
     <ProjectGuid>{7B9B5868-A285-4DE5-B899-C809823D7040}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ICalculator.test</RootNamespace>
-    <AssemblyName>ICalculator.test</AssemblyName>
+    <RootNamespace>ICalculator.Tests</RootNamespace>
+    <AssemblyName>ICalculator.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -52,8 +52,11 @@
     <Compile Include="UnaryCalculators\ArcsinTest.cs" />
     <Compile Include="UnaryCalculators\ArctgTest.cs" />
     <Compile Include="UnaryCalculators\CosTest.cs" />
+    <Compile Include="UnaryCalculators\CotTest.cs" />
     <Compile Include="UnaryCalculators\LnTest.cs" />
+    <Compile Include="UnaryCalculators\SinTest.cs" />
     <Compile Include="UnaryCalculators\SqrtTest.cs" />
+    <Compile Include="UnaryCalculators\TanTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

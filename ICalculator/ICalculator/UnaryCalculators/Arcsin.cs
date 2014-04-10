@@ -8,10 +8,10 @@ namespace ICalculator.UnaryCalculators
 {
   public  class Arcsin: IUnaryCalculator
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Asin(first);
-            return result.ToString();
+            return result;
         }
     }
 }

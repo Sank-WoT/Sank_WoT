@@ -1,7 +1,7 @@
-﻿using System;
+﻿using ICalculator.UnaryCalculators;
 using NUnit.Framework;
 
-namespace ICalculator.UnaryCalculators
+namespace ICalculator.Tests.UnaryCalculators
 {
     [TestFixture]
     public class SqrtTest
@@ -10,7 +10,7 @@ namespace ICalculator.UnaryCalculators
         public void CalculateTest()
         {
             Sqrt sqrt = new Sqrt();
-            Assert.AreEqual("1", sqrt.Calculate(1), "sqrt(1) !=1");
+            Assert.AreEqual(1, sqrt.Calculate(1), 0.0001);
         }
     }
 }

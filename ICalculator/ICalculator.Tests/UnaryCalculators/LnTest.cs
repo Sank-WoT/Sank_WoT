@@ -1,7 +1,7 @@
-﻿using System;
+﻿using ICalculator.UnaryCalculators;
 using NUnit.Framework;
 
-namespace ICalculator.UnaryCalculators
+namespace ICalculator.Tests.UnaryCalculators
 {
     [TestFixture]
     public class LnTest
@@ -10,7 +10,7 @@ namespace ICalculator.UnaryCalculators
         public void CalculateTest()
         {
             Ln ln = new Ln();
-            Assert.AreEqual("0", ln.Calculate(1), "ln(1) !=0");
+            Assert.AreEqual(0, ln.Calculate(1), 0.0001);
         }
     }
 }

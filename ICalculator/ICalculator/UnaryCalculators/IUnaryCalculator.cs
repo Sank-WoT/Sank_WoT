@@ -8,6 +8,6 @@ namespace ICalculator.UnaryCalculators
 {
     public interface IUnaryCalculator
     {
-        string Calculate(double first);
+        double Calculate(double first);
     }
 }

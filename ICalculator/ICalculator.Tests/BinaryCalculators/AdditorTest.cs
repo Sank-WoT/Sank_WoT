@@ -1,7 +1,7 @@
 ﻿using ICalculator.BinaryCalculators;
 using NUnit.Framework;
 
-namespace ICalculator.test.BinaryCalculators
+namespace ICalculator.Tests.BinaryCalculators
 {
     [TestFixture]
     public class AdditorTest
@@ -10,7 +10,7 @@ namespace ICalculator.test.BinaryCalculators
         public void  CalculateTest()
         {
              Additor additor= new Additor();
-             Assert.AreEqual("2",additor.Calculate(1,1),"1+1 !=2");
+             Assert.AreEqual(2,additor.Calculate(1,1),0.0001);
         }
     }
 }

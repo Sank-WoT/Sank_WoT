@@ -9,10 +9,10 @@ namespace ICalculator.UnaryCalculators
 {
     public class Napierian_number : IUnaryCalculator
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Pow(Math.E,first );
-            return result.ToString();
+            return result;
         }
     }
 }

@@ -8,10 +8,10 @@ namespace ICalculator.UnaryCalculators
 {
     public class Arccos : IUnaryCalculator
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Acos(first);
-            return result.ToString();
+            return result;
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using ICalculator.BinaryCalculators;
 using NUnit.Framework;
 
-namespace ICalculator.test.BinaryCalculators
+namespace ICalculator.Tests.BinaryCalculators
 {
     [TestFixture]
     public class MultiplierTest
@@ -10,7 +10,7 @@ namespace ICalculator.test.BinaryCalculators
         public void CalculateTest()
         {
             Multiplier multiplier = new Multiplier();
-            Assert.AreEqual("49", multiplier.Calculate(7,7), "7*7 !=49");
+            Assert.AreEqual(49, multiplier.Calculate(7,7),0.0001);
         }
     }
 }
