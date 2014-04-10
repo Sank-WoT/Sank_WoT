@@ -12,5 +12,11 @@ namespace ICalculator.Tests.BinaryCalculators
             Multiplier multiplier = new Multiplier();
             Assert.AreEqual(49, multiplier.Calculate(7,7),0.0001);
         }
+        [Test]
+        public void CalculateNegativeTest()
+        {
+            Multiplier multiplier = new Multiplier();
+            Assert.AreEqual(-49, multiplier.Calculate(7, -7), 0.0001);
+        }
     }
 }
