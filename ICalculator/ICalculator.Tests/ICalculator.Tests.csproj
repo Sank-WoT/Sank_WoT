@@ -55,6 +55,7 @@
     <Compile Include="UnaryCalculators\CotTest.cs" />
     <Compile Include="UnaryCalculators\LnTest.cs" />
     <Compile Include="UnaryCalculators\LogTest.cs" />
+    <Compile Include="UnaryCalculators\Napierian_numberTest.cs" />
     <Compile Include="UnaryCalculators\SinTest.cs" />
     <Compile Include="UnaryCalculators\SqrtTest.cs" />
     <Compile Include="UnaryCalculators\TanTest.cs" />

@@ -3,13 +3,13 @@ using NUnit.Framework;
 
 namespace ICalculator.Tests.UnaryCalculators
 {
-    public class LogTest
+    public class Napierian_numberTest
     {
         [Test]
         public void CalculateTest()
         {
-            Log log = new Log();
-            Assert.AreEqual(2, log.Calculate(4), 0.0001);
+            Napierian_number napierian_number = new Napierian_number();
+            Assert.AreEqual(7.3890, napierian_number.Calculate(2), 0.0001);
         }
     }
 }
