@@ -12,5 +12,6 @@ namespace ICalculator.Tests.UnaryCalculators
             Cos cos = new Cos();
             Assert.AreEqual(0.5403, cos.Calculate(1), 0.0001);
         }
+
     }
 }

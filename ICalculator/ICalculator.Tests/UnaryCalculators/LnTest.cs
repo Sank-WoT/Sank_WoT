@@ -12,5 +12,12 @@ namespace ICalculator.Tests.UnaryCalculators
             Ln ln = new Ln();
             Assert.AreEqual(0, ln.Calculate(1), 0.0001);
         }
+
+        /*[Test]
+        public void CalculateTestNegativ()
+        {
+            Ln ln = new Ln();
+            Assert.AreEqual(0, ln.Calculate(-1), 0.0001);
+        }*/
     }
 }
