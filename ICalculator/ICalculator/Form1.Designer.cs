@@ -47,6 +47,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.Descending = new System.Windows.Forms.Button();
+            this.Ascending = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // subtraction
@@ -165,9 +167,9 @@
             // 
             // logx
             // 
-            this.logx.Location = new System.Drawing.Point(49, 256);
+            this.logx.Location = new System.Drawing.Point(21, 256);
             this.logx.Name = "logx";
-            this.logx.Size = new System.Drawing.Size(70, 30);
+            this.logx.Size = new System.Drawing.Size(85, 30);
             this.logx.TabIndex = 13;
             this.logx.Text = "log2(x)";
             this.logx.UseVisualStyleBackColor = true;
@@ -225,7 +227,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(49, 292);
+            this.button5.Location = new System.Drawing.Point(87, 148);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(70, 30);
             this.button5.TabIndex = 19;
@@ -233,11 +235,33 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.ln_Click);
             // 
+            // Descending
+            // 
+            this.Descending.Location = new System.Drawing.Point(241, 256);
+            this.Descending.Name = "Descending";
+            this.Descending.Size = new System.Drawing.Size(34, 30);
+            this.Descending.TabIndex = 20;
+            this.Descending.Text = "<";
+            this.Descending.UseVisualStyleBackColor = true;
+            this.Descending.Click += new System.EventHandler(this.Descending_Click);
+            // 
+            // Ascending
+            // 
+            this.Ascending.Location = new System.Drawing.Point(277, 256);
+            this.Ascending.Name = "Ascending";
+            this.Ascending.Size = new System.Drawing.Size(34, 30);
+            this.Ascending.TabIndex = 21;
+            this.Ascending.Text = ">";
+            this.Ascending.UseVisualStyleBackColor = true;
+            this.Ascending.Click += new System.EventHandler(this.Ascending_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 340);
+            this.ClientSize = new System.Drawing.Size(315, 291);
+            this.Controls.Add(this.Ascending);
+            this.Controls.Add(this.Descending);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -286,6 +310,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Descending;
+        private System.Windows.Forms.Button Ascending;
 
     }
 }

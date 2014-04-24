@@ -77,6 +77,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BinaryCalculators\Substractor.cs" />
+    <Compile Include="SortiOperation\Ascending.cs" />
+    <Compile Include="SortiOperation\Descending.cs" />
+    <Compile Include="SortiOperation\ISortiOperation.cs" />
+    <Compile Include="SortiOperation\SortiOperationFactoryc.cs" />
     <Compile Include="UnaryCalculators\Arccos.cs" />
     <Compile Include="UnaryCalculators\Arcsin.cs" />
     <Compile Include="UnaryCalculators\Arctg.cs" />

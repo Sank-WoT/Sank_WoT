@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace ICalculator.SortiOperation
 {
-    class Descending
+    class Descending : ISortiOperation
     {
+        public int[] Sort(int[] array)
+        {
+
+
+            return array;
+        }
     }
 }
