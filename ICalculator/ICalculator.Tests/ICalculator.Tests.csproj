@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayTest\AscendingTest.cs" />
+    <Compile Include="ArrayTest\DescendingTest.cs" />
     <Compile Include="BinaryCalculators\AdditorTest.cs" />
     <Compile Include="BinaryCalculators\DividerTest.cs" />
     <Compile Include="BinaryCalculators\InvolutionTest.cs" />

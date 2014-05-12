@@ -10,6 +10,10 @@ namespace ICalculator.UnaryCalculators
     {
         public double Calculate(double first)
         {
+            if (first <=0 )
+            {
+                throw new Exception(" Число должно бцыть больше нуля ");
+            }
             double result = Math.Log(first, Math.E);
             return result;
         }

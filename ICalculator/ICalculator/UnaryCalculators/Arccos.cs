@@ -10,6 +10,10 @@ namespace ICalculator.UnaryCalculators
     {
         public double Calculate(double first)
         {
+            if (first > 1 || first < 0)
+            {
+                throw new Exception("Аргумент аркосинуса должен лежать в пределах от 0 до 1 ");
+            }
             double result = Math.Acos(first);
             return result;
         }

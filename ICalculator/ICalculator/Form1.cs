@@ -40,10 +40,18 @@ namespace ICalculator
 
         private void Calculate(string name)
         {
+            try
+            {
             double firstArgument = Convert.ToDouble(firstField.Text);
             double secondArgument = Convert.ToDouble(secondField.Text);
             IBinaryCalculator calculator = BinaryCalculatorsFactory.CreateBinaryCalculator(name);
             resultField.Text = calculator.Calculate(firstArgument, secondArgument).ToString();
+            }
+            catch (Exception e)
+            {
+                resultField.Text = e.Message;
+            }
+           
         }
 
         private void sqrt_Click(object sender, EventArgs e)
@@ -103,9 +111,17 @@ namespace ICalculator
 
         private void Calculate1(string name)
         {
+            try
+            {
             double firstArgument = Convert.ToDouble(firstField.Text);
             IUnaryCalculator calculator = UnaryCalculatorsFactory.CreateBinaryCalculator(name);
             resultField.Text = calculator.Calculate(firstArgument).ToString();
+            }
+            catch (Exception e)
+            {
+                resultField.Text = e.Message;
+            }
+        
         }
 
         private void Descending_Click(object sender, EventArgs e)
@@ -120,7 +136,8 @@ namespace ICalculator
 
         private void CalculateArray(string name)
         {
-
+            try
+            {
             string[] stringArgument = firstField.Text.Split(' ');
             int[] intArray = new int[stringArgument.Length];
             for (int i = 0; i < stringArgument.Length; i++)
@@ -135,6 +152,12 @@ namespace ICalculator
                 result += resultArray[j] + " ";
             }
             resultField.Text = result;
+            }
+            catch (Exception e)
+            {
+                resultField.Text = e.Message;
+            }
+         
 
         }
 
