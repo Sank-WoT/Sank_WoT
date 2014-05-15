@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ICalculator.SortiOperation
 {
-    public class SortiOperationFactoryc
+    public static class SortingOperationFactory
     {
         public static ISortiOperation CreateSortiOperation(string name)
         {

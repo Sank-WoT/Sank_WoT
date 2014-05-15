@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ICalculator.UnaryCalculators
 {
@@ -15,7 +11,7 @@ namespace ICalculator.UnaryCalculators
                 case "sqrt":
                     return new Sqrt();
                 case "e^x":
-                    return new Napierian_number();
+                    return new NapierianNumber();
                 case "arcsin(x)":
                     return new Arcsin();
                 case "arccos(x)":

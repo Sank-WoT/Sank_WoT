@@ -1,5 +1,4 @@
-﻿using System;
-using ICalculator.SortiOperation;
+﻿using ICalculator.SortiOperation;
 using NUnit.Framework;
 
 namespace ICalculator.Tests.ArrayTest

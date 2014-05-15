@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ICalculator.UnaryCalculators
 {
-   public class Sqrt: IUnaryCalculator
+    public class Sqrt : IUnaryCalculator
     {
 
         public double Calculate(double first)

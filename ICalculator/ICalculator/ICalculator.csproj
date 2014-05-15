@@ -89,7 +89,7 @@
     <Compile Include="UnaryCalculators\IUnaryCalculator.cs" />
     <Compile Include="UnaryCalculators\Ln.cs" />
     <Compile Include="UnaryCalculators\Log.cs" />
-    <Compile Include="UnaryCalculators\Napierian number.cs" />
+    <Compile Include="UnaryCalculators\NapierianNumber.cs" />
     <Compile Include="UnaryCalculators\Sin.cs" />
     <Compile Include="UnaryCalculators\Sqrt.cs" />
     <Compile Include="UnaryCalculators\Tan.cs" />

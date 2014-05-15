@@ -1,5 +1,4 @@
-﻿using System;
-using ICalculator.SortiOperation;
+﻿using ICalculator.SortiOperation;
 using NUnit.Framework;
 
 namespace ICalculator.Tests.ArrayTest
@@ -11,7 +10,7 @@ namespace ICalculator.Tests.ArrayTest
         public void CalculateTest()
         {
             int[] mas = new []{5,6,7,2,34,3,5,-43,6,-7};
-            Ascending ascending = new Ascending();
+            var ascending = new Ascending();
             int[] expected = new[] { -43, -7, 2, 3, 5, 5, 6, 6, 7, 34 };
             int[] result = ascending.Sort(mas);
             Assert.AreEqual(expected.Length,result.Length);

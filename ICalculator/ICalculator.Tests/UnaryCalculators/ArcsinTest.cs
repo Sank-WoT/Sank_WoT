@@ -1,4 +1,5 @@
-﻿using ICalculator.UnaryCalculators;
+﻿using System;
+using ICalculator.UnaryCalculators;
 using NUnit.Framework;
 
 namespace ICalculator.Tests.UnaryCalculators
@@ -18,6 +19,14 @@ namespace ICalculator.Tests.UnaryCalculators
         {
             Arcsin arcsin = new Arcsin();
             Assert.AreEqual(-0.5236, arcsin.Calculate(-0.5), 0.0001);
+        }
+     
+        [Test]
+        [ExpectedException(typeof(Exception))]
+        public void CalculateFailTest()
+        {
+            Arcsin arcsin = new Arcsin();
+            arcsin.Calculate(2);
         }
     }
 }

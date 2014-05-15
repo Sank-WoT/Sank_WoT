@@ -123,7 +123,7 @@
             this.involution.TabIndex = 8;
             this.involution.Text = "^";
             this.involution.UseVisualStyleBackColor = true;
-            this.involution.Click += new System.EventHandler(this.involution_Click_1);
+            this.involution.Click += new System.EventHandler(this.involution_Click);
             // 
             // sqrt
             // 

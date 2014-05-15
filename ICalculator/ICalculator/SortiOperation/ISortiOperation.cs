@@ -3,6 +3,6 @@ namespace ICalculator.SortiOperation
 {
     public interface ISortiOperation
     {
-        int[] Sort(int[] array);//Шейкерная сортировка
+        int[] Sort(int[] array);
     }
 }

@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace ICalculator.UnaryCalculators
 {
-    public class Napierian_number : IUnaryCalculator
+    public class NapierianNumber : IUnaryCalculator
     {
         public double Calculate(double first)
         {

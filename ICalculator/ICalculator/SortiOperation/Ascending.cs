@@ -5,38 +5,32 @@ namespace ICalculator.SortiOperation
     {
         public int[] Sort(int[] array)
         {
-            int beg, end;
-            int count = 0;
-
             for (int i = 0; i < array.Length / 2; i++) 
             {                                      
-                beg = 0;
-                end = array.Length - 1;
+                int begin = 0;
+                int end = array.Length - 1;
 
                 do
                 {
-                    count += 2;
-                 
-                    if (array[beg] > array[beg + 1])
-                        Swap(array, beg, beg + 1);
-                    beg++;
+                    if (array[begin] > array[begin + 1])
+                        Swap(array, begin, begin + 1);
+                    begin++;
 
                     if (array[end - 1] > array[end])
                         Swap(array, end - 1, end);
                     end--;
 
                 }
-                while (beg <= end);
+                while (begin <= end);
             }
             return array;
         }
 
         private void Swap(int[] myint, int i, int j)
         {
-            int glass;
-            glass = myint[i];
+            int temp = myint[i];
             myint[i] = myint[j];
-            myint[j] = glass;
+            myint[j] = temp;
         }
     }
 }

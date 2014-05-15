@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ICalculator.UnaryCalculators
 {
@@ -10,6 +6,10 @@ namespace ICalculator.UnaryCalculators
     {
         public double Calculate(double first)
         {
+            if (first <= 0 )
+            {
+                throw new Exception("Значение логарифма должно быть > 0");
+            }
             double result = Math.Log(first,2);
             return result;
         }

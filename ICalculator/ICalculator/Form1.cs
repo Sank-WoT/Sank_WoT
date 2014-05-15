@@ -33,7 +33,7 @@ namespace ICalculator
             Calculate("/");
         }
 
-        private void involution_Click_1(object sender, EventArgs e)
+        private void involution_Click(object sender, EventArgs e)
         {
             Calculate("^");
         }
@@ -42,86 +42,86 @@ namespace ICalculator
         {
             try
             {
-            double firstArgument = Convert.ToDouble(firstField.Text);
-            double secondArgument = Convert.ToDouble(secondField.Text);
-            IBinaryCalculator calculator = BinaryCalculatorsFactory.CreateBinaryCalculator(name);
-            resultField.Text = calculator.Calculate(firstArgument, secondArgument).ToString();
+                double firstArgument = Convert.ToDouble(firstField.Text);
+                double secondArgument = Convert.ToDouble(secondField.Text);
+                IBinaryCalculator calculator = BinaryCalculatorsFactory.CreateBinaryCalculator(name);
+                resultField.Text = calculator.Calculate(firstArgument, secondArgument).ToString();
             }
             catch (Exception e)
             {
                 resultField.Text = e.Message;
             }
-           
+
         }
 
         private void sqrt_Click(object sender, EventArgs e)
         {
-            Calculate1("sqrt");
+            CalculateUnary("sqrt");
         }
 
         private void Napierian_Click(object sender, EventArgs e)
         {
-            Calculate1("e^x");
+            CalculateUnary("e^x");
         }
 
         private void arcsin_Click(object sender, EventArgs e)
         {
-            Calculate1("arcsin(x)");
+            CalculateUnary("arcsin(x)");
         }
 
         private void arccos_Click(object sender, EventArgs e)
         {
-            Calculate1("arccos(x)");
+            CalculateUnary("arccos(x)");
         }
 
         private void logx_Click(object sender, EventArgs e)
         {
-            Calculate1("log2(x)");
+            CalculateUnary("log2(x)");
         }
 
         private void arctg_Click(object sender, EventArgs e)
         {
-            Calculate1("arctg(x)");
+            CalculateUnary("arctg(x)");
         }
 
         private void sin_Click(object sender, EventArgs e)
         {
-            Calculate1("sin(x)");
+            CalculateUnary("sin(x)");
         }
 
         private void cos_Click(object sender, EventArgs e)
         {
-            Calculate1("cos(x)");
+            CalculateUnary("cos(x)");
         }
 
         private void tan_Click(object sender, EventArgs e)
         {
-            Calculate1("tan(x)");
+            CalculateUnary("tan(x)");
         }
 
         private void cot_Click(object sender, EventArgs e)
         {
-            Calculate1("cot(x)");
+            CalculateUnary("cot(x)");
         }
 
         private void ln_Click(object sender, EventArgs e)
         {
-            Calculate1("ln(x)");
+            CalculateUnary("ln(x)");
         }
 
-        private void Calculate1(string name)
+        private void CalculateUnary(string name)
         {
             try
             {
-            double firstArgument = Convert.ToDouble(firstField.Text);
-            IUnaryCalculator calculator = UnaryCalculatorsFactory.CreateBinaryCalculator(name);
-            resultField.Text = calculator.Calculate(firstArgument).ToString();
+                double firstArgument = Convert.ToDouble(firstField.Text);
+                IUnaryCalculator calculator = UnaryCalculatorsFactory.CreateBinaryCalculator(name);
+                resultField.Text = calculator.Calculate(firstArgument).ToString();
             }
             catch (Exception e)
             {
                 resultField.Text = e.Message;
             }
-        
+
         }
 
         private void Descending_Click(object sender, EventArgs e)
@@ -138,30 +138,26 @@ namespace ICalculator
         {
             try
             {
-            string[] stringArgument = firstField.Text.Split(' ');
-            int[] intArray = new int[stringArgument.Length];
-            for (int i = 0; i < stringArgument.Length; i++)
-            {
-                intArray[i] = Convert.ToInt32(stringArgument[i]);
-            }
-            ISortiOperation calculator = SortiOperationFactoryc.CreateSortiOperation(name);
-            int[] resultArray = calculator.Sort(intArray);
-            string result = string.Empty;
-            for (int j = 0; j < stringArgument.Length; j++)
-            {
-                result += resultArray[j] + " ";
-            }
-            resultField.Text = result;
+                string[] stringArgument = firstField.Text.Split(' ');
+                var intArray = new int[stringArgument.Length];
+                for (int i = 0; i < stringArgument.Length; i++)
+                {
+                    intArray[i] = Convert.ToInt32(stringArgument[i]);
+                }
+                ISortiOperation calculator = SortingOperationFactory.CreateSortiOperation(name);
+                int[] resultArray = calculator.Sort(intArray);
+                string result = string.Empty;
+                for (int j = 0; j < stringArgument.Length; j++)
+                {
+                    result += resultArray[j] + " ";
+                }
+                resultField.Text = result;
             }
             catch (Exception e)
             {
                 resultField.Text = e.Message;
             }
-         
-
         }
-
-
     }
 }
 

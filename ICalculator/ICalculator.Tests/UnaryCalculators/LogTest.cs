@@ -1,4 +1,5 @@
-﻿using ICalculator.UnaryCalculators;
+﻿using System;
+using ICalculator.UnaryCalculators;
 using NUnit.Framework;
 
 namespace ICalculator.Tests.UnaryCalculators
@@ -17,6 +18,14 @@ namespace ICalculator.Tests.UnaryCalculators
         {
             Log log = new Log();
             Assert.AreEqual(0, log.Calculate(1), 0.0001);
+        }
+
+        [Test]
+        [ExpectedException(typeof(Exception))]
+        public void CalculateFailTest()
+        {
+            Log log = new Log();
+            log.Calculate(0);
         }
     }
 }

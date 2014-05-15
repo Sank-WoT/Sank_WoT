@@ -1,4 +1,5 @@
-﻿using ICalculator.UnaryCalculators;
+﻿using System;
+using ICalculator.UnaryCalculators;
 using NUnit.Framework;
 
 namespace ICalculator.Tests.UnaryCalculators
@@ -18,6 +19,14 @@ namespace ICalculator.Tests.UnaryCalculators
         {
             Arccos arccos = new Arccos();
             Assert.AreEqual(2.0944, arccos.Calculate(-0.5), 0.0001);
+        }
+        
+        [Test]
+        [ExpectedException(typeof(Exception))]
+        public void CalculateFailTest()
+        {
+            Arccos arccos = new Arccos();
+            arccos.Calculate(2);
         }
     }
 }
